@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maison BnB · Sourcing of high-quality diamonds and stones</title>
+<meta name="description" content="Maison BnB sources and supplies diamonds and stones for high jewelry, family offices and investors.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root{--basalt:#1f2428;--mist:#eceeed;--slate:#5b6870;--gold:#b8863b;--paper:#f7f8f7;--line:#c7cccb;
+--display:'Bricolage Grotesque',system-ui,sans-serif;--body:'Newsreader',Georgia,serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);font-size:1.15rem;line-height:1.65;color:var(--basalt);background:var(--paper)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+header{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:.9rem 5vw;background:rgba(247,248,247,.93);backdrop-filter:blur(6px)}
+.logo{font-family:var(--display);font-weight:700;text-decoration:none;font-size:1.15rem}
+nav a{font-family:var(--display);text-decoration:none;margin-left:1.4rem;font-size:.95rem}
+nav a:hover{color:var(--gold)}
+.hero{background:var(--basalt);color:var(--mist);padding:13vh 5vw 15vh;position:relative;overflow:hidden}
+.hero h1{font-family:var(--display);font-weight:700;font-size:clamp(2.5rem,8.5vw,6.6rem);line-height:.98;letter-spacing:-.03em;max-width:13ch;position:relative;z-index:1}
+.hero p{max-width:35rem;margin-top:1.6rem;color:#c9cfd1;position:relative;z-index:1}
+.btn{display:inline-block;margin-top:2rem;padding:.8rem 1.6rem;background:var(--gold);color:var(--basalt);font-family:var(--display);font-weight:700;text-decoration:none;border-radius:999px;position:relative;z-index:1}
+.btn:hover{background:#d19c4c}
+.gem{position:absolute;right:5vw;top:50%;translate:0 -50%;width:min(40vw,440px);aspect-ratio:1;clip-path:polygon(25% 8%,75% 8%,100% 38%,50% 96%,0 38%);
+background:conic-gradient(from 20deg at 50% 45%,#e9edee,#8f9ca2,#f6f8f8,#69767d,#dfe4e6,#9aa7ad,#f1f4f4,#e9edee)}
+.gem::after{content:"";position:absolute;inset:0;clip-path:polygon(25% 8%,75% 8%,100% 38%,0 38%);background:linear-gradient(120deg,rgba(255,255,255,.55),rgba(255,255,255,0) 60%)}
+section{padding:11vh 5vw}
+h2{font-family:var(--display);font-size:clamp(1.9rem,4.5vw,3.1rem);line-height:1.05;letter-spacing:-.02em;margin-bottom:1.2rem;max-width:20ch}
+.lead{max-width:38rem}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:0;margin-top:2.5rem;border-top:1px solid var(--line)}
+.cat{padding:1.8rem 1.6rem 1.8rem 0;border-bottom:1px solid var(--line)}
+.cat h3{font-family:var(--display);font-size:1.3rem;margin-bottom:.4rem}
+.cat p{font-size:1.02rem;color:var(--slate)}
+.process{background:var(--mist)}
+.steps{list-style:none;padding:0;margin-top:2.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:2rem;counter-reset:s}
+.steps li{counter-increment:s;border-top:3px solid var(--gold);padding-top:1rem}
+.steps li::before{content:counter(s);font-family:var(--display);font-weight:700;font-size:2rem;display:block;line-height:1}
+.steps strong{font-family:var(--display);display:block;margin:.4rem 0 .2rem}
+.steps span{font-size:1.02rem;color:var(--slate)}
+.trust{display:grid;grid-template-columns:1fr 1fr;gap:6vw}
+.trust ul{list-style:none;padding:0;border-top:1px solid var(--line)}
+.trust li{padding:.8rem 0;border-bottom:1px solid var(--line)}
+.contact{background:var(--basalt);color:var(--mist)}
+.contact a{color:var(--gold)}
+footer{padding:2rem 5vw;font-size:.9rem;color:var(--slate);font-family:var(--display)}
+@media(max-width:760px){.trust{grid-template-columns:1fr}nav a{margin-left:.9rem}.gem{opacity:.25;right:-8vw}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* --- colores y fotos --- */
+.hero{background:linear-gradient(135deg,#16302b 0%,#24483b 55%,#4a5a2e 100%)}
+.gem{background:conic-gradient(from 20deg at 50% 45%,#e6cf9a,#7fb08a,#c8912e,#3f6b4f,#f0dfb4,#b5573a,#e6cf9a)}
+.btn{color:#16302b;background:#d9a441}.btn:hover{background:#e6b658}
+.contact{background:#16302b}.contact a{color:#e6b658}nav a:hover{color:#3f6b4f}
+.cat{border-top:4px solid var(--c,#b5573a);margin-top:-1px}
+.cats .cat:nth-child(1){--c:#b5573a}.cats .cat:nth-child(2){--c:#2f6b4f}.cats .cat:nth-child(3){--c:#c8912e}.cats .cat:nth-child(4){--c:#6b7a3a}
+.steps li{border-top-color:var(--c)}
+.steps li:nth-child(1){--c:#b5573a}.steps li:nth-child(2){--c:#2f6b4f}.steps li:nth-child(3){--c:#c8912e}.steps li:nth-child(4){--c:#6b7a3a}
+.steps li::before{color:var(--c)}
+.process{background:#eef1e6}
+.white{background:#fff}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1.4rem;margin-top:2.5rem}
+.gal figure{text-align:center}
+.ph{position:relative;aspect-ratio:1;border-radius:20px;overflow:hidden;background:linear-gradient(145deg,var(--a),var(--b));display:grid;place-items:center}
+.ph .f{width:52%;aspect-ratio:1;clip-path:polygon(25% 8%,75% 8%,100% 38%,50% 96%,0 38%);background:conic-gradient(from 20deg at 50% 45%,var(--b),#fff,var(--a),#ffffffcc,var(--b))}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.gal figcaption{font-family:var(--display);font-weight:700;margin-top:.7rem}
+.cert{display:grid;grid-template-columns:1fr 1fr;gap:6vw;align-items:center}
+.paper{position:relative;background:#fff;border:2px solid #2f6b4f;border-radius:12px;padding:1.6rem;box-shadow:8px 8px 0 #d9a441;transform:rotate(-2deg);min-height:260px}
+.paper b{font-family:var(--display);display:block;margin-bottom:1rem}
+.paper i{display:block;height:9px;border-radius:5px;background:#dfe6d6;margin:.7rem 0}
+.paper i:nth-of-type(2){width:80%}.paper i:nth-of-type(3){width:60%}.paper i:nth-of-type(4){width:75%}
+.paper .seal{position:absolute;right:1.4rem;bottom:1.2rem;width:64px;height:64px;border-radius:50%;background:radial-gradient(circle,#e6b658,#b5573a);box-shadow:0 0 0 5px #fff,0 0 0 8px #b5573a}
+.paper img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:10px}
+@media(max-width:760px){.cert{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#home">Maison BnB</a>
+  <nav><a href="#clients">Clients</a><a href="#stones">Stones</a><a href="#founder">Irene</a><a href="#contact">Contact</a><a href="index.html">ES</a></nav>
+</header>
+
+<main id="home">
+<div class="hero">
+  <h1>Exceptional stones, sourced with discretion</h1>
+  <p>Maison BnB sources and supplies high-quality diamonds and stones for high jewelry houses, family offices, investors and professional clients, guided by the expertise and judgment of its founder, Irene.</p>
+  <a class="btn" href="#contact">Request a private consultation</a>
+  <div class="gem" aria-hidden="true"></div>
+</div>
+
+<section id="clients">
+  <h2>Who we serve</h2>
+  <p class="lead">Every client is looking for something different, and every search starts from scratch.</p>
+  <div class="cats">
+    <div class="cat"><h3>High jewelry</h3><p>Center stones and matched sets for unique pieces and collections.</p></div>
+    <div class="cat"><h3>Family offices</h3><p>Acquisition of stones of exceptional quality, with full documentation and confidentiality.</p></div>
+    <div class="cat"><h3>Investors</h3><p>Stones selected for quality, rarity and traceability, with clear information to support your decision.</p></div>
+    <div class="cat"><h3>Jewelers and general clients</h3><p>Regular supply for workshops, brands and private buyers, with the same personal attention.</p></div>
+  </div>
+</section>
+
+<section id="stones" class="process">
+  <h2>What we source</h2>
+  <p class="lead">We specialize in high-quality stones and also supply commercial-grade material. If what you need isn't available, we keep searching until we find it.</p>
+  <div class="cats">
+    <div class="cat"><h3>Diamonds</h3><p>Loose or in lots, to your exact specifications.</p></div>
+    <div class="cat"><h3>Colored stones</h3><p>Rubies, sapphires, emeralds, spinels, tourmalines and more, of jewelry quality and with documented origin.</p></div>
+    <div class="cat"><h3>Exceptional pieces and off-market stones</h3><p>Singular stones in size, color or rarity, and material that never reaches the open market.</p></div>
+    <div class="cat"><h3>Commercial stones</h3><p>Commercial-grade material for production, series and everyday use, in quantities that suit you.</p></div>
+  </div>
+</section>
+
+<section id="process">
+  <h2>How we work</h2>
+  <ol class="steps">
+    <li><strong>Private conversation</strong><span>We learn what you need, what it's for and your criteria.</span></li>
+    <li><strong>Selective search</strong><span>We consult our network of trusted suppliers.</span></li>
+    <li><strong>Detailed proposal</strong><span>We present a few well-documented options.</span></li>
+    <li><strong>Acquisition and delivery</strong><span>We handle the purchase and insured shipping.</span></li>
+  </ol>
+</section>
+
+<section id="founder" class="process">
+  <div class="trust">
+    <div>
+      <h2>Irene, founder</h2>
+      <p class="lead">Irene is IGI (International Gemological Institute) certified and runs a commercial jewelry brand. Her deep knowledge of stones and jewelry lets her select every piece with technical judgment and understand what each client needs, from a full collection to an exceptional acquisition.</p>
+    </div>
+    <ul>
+      <li>Personal attention on every search</li>
+      <li>Confidentiality in every transaction</li>
+      <li>Documented origin and characteristics</li>
+      <li>Independent gemological certification where applicable</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Let's talk about what you're looking for</h2>
+  <p class="lead">Write to us and Irene will reply personally. All inquiries are confidential.</p>
+  <p style="margin-top:1.2rem">
+    Email: <a href="mailto:irenemaisonbnb@gmail.com">irenemaisonbnb@gmail.com</a><br>
+    LinkedIn: <a href="https://www.linkedin.com/in/irenegonzalezolivar/">Irene</a>
+  </p>
+</section>
+</main>
+<footer>© Maison BnB</footer>
+</body>
+</html>
